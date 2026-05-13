@@ -1,0 +1,62 @@
+[
+  {
+    "id": "jd_01",
+    "title": "Junior Software Developer",
+    "company": "TechSolutions Ltd",
+    "description": "We are looking for a Junior Software Developer to join our growing team. The ideal candidate will have experience in Python and web development. Responsibilities include developing and maintaining web applications, writing clean and efficient code, collaborating with cross-functional teams, and participating in code reviews. Required skills: Python, JavaScript, HTML, CSS, SQL, Git. Knowledge of REST APIs and agile methodologies is desirable. A degree in Computer Science or related field is preferred. Good communication skills and problem-solving ability are essential."
+  },
+  {
+    "id": "jd_02",
+    "title": "Data Analyst",
+    "company": "DataDriven Corp",
+    "description": "Seeking a Data Analyst to help interpret complex data and provide actionable insights. The role involves collecting, processing, and analysing large datasets using Python and SQL. You will create dashboards and visualisations using tools such as Tableau and Power BI. Experience with statistical analysis and machine learning is a plus. Required skills: Python, SQL, Excel, data visualisation, statistical analysis, Pandas, NumPy. Strong analytical thinking and attention to detail are essential. A degree in Mathematics, Statistics, or Computer Science is preferred."
+  },
+  {
+    "id": "jd_03",
+    "title": "Machine Learning Engineer",
+    "company": "AI Innovations Inc",
+    "description": "We are hiring a Machine Learning Engineer to design, build, and deploy machine learning models. You will work on NLP, computer vision, and recommendation systems. Responsibilities include data preprocessing, feature engineering, model training and evaluation, and deployment using Flask or FastAPI. Required skills: Python, scikit-learn, TensorFlow, PyTorch, NLP, machine learning, deep learning, Git, Docker. Experience with cloud platforms such as AWS or GCP is desirable. A strong understanding of mathematics and statistics is essential."
+  },
+  {
+    "id": "jd_04",
+    "title": "Full Stack Web Developer",
+    "company": "WebCraft Agency",
+    "description": "We are seeking a Full Stack Developer with expertise in both frontend and backend development. You will design and implement web applications, manage databases, and ensure high performance. Required skills: JavaScript, React, Node.js, Express, MongoDB, SQL, HTML, CSS, REST APIs, Git. Experience with TypeScript and cloud deployment is a bonus. Strong understanding of software engineering principles and agile development. Good teamwork and communication skills required."
+  },
+  {
+    "id": "jd_05",
+    "title": "Cybersecurity Analyst",
+    "company": "SecureNet Ltd",
+    "description": "We are looking for a Cybersecurity Analyst to protect our systems and networks. Responsibilities include monitoring for threats, conducting vulnerability assessments, implementing security measures, and responding to incidents. Required skills: network security, penetration testing, SIEM tools, Python scripting, firewalls, Linux, ethical hacking, risk assessment. Knowledge of ISO 27001 and GDPR compliance is desirable. A degree in Cybersecurity, Computer Science, or related field preferred. Analytical mindset and attention to detail are essential."
+  },
+  {
+    "id": "jd_06",
+    "title": "Cloud Solutions Architect",
+    "company": "CloudFirst Technologies",
+    "description": "Seeking an experienced Cloud Solutions Architect to design and implement scalable cloud infrastructure. Responsibilities include architecting AWS or Azure solutions, managing DevOps pipelines, and ensuring security and compliance. Required skills: AWS, Azure, Terraform, Docker, Kubernetes, CI/CD, Python, Linux, networking. Experience with microservices architecture and agile delivery is essential. Strong communication skills to work with stakeholders at all levels."
+  },
+  {
+    "id": "jd_07",
+    "title": "Business Intelligence Developer",
+    "company": "InsightPro Analytics",
+    "description": "Looking for a Business Intelligence Developer to transform raw data into meaningful dashboards and reports. You will work closely with business teams to understand requirements and build SQL queries, ETL pipelines, and interactive reports. Required skills: SQL, Power BI, Tableau, Python, ETL processes, data warehousing, Excel. Knowledge of Azure Data Factory or AWS Redshift is advantageous. Strong problem-solving and communication skills are essential."
+  },
+  {
+    "id": "jd_08",
+    "title": "Mobile App Developer (Android/iOS)",
+    "company": "AppFactory Studios",
+    "description": "We are recruiting a Mobile App Developer skilled in building cross-platform applications. Responsibilities include designing UI/UX, integrating APIs, and ensuring app performance. Required skills: Flutter, Dart, React Native, JavaScript, REST APIs, Firebase, Git. Familiarity with app store deployment and agile methodologies is expected. A portfolio of published apps is highly desirable. Good collaboration and communication skills required."
+  },
+  {
+    "id": "jd_09",
+    "title": "NLP Research Scientist",
+    "company": "LinguaAI Research",
+    "description": "We are seeking an NLP Research Scientist to develop state-of-the-art natural language processing models. Responsibilities include researching and implementing NLP techniques, fine-tuning large language models, and publishing research findings. Required skills: Python, NLP, transformers, BERT, GPT, scikit-learn, PyTorch, TensorFlow, text classification, machine learning. Strong academic background in Computer Science, Linguistics, or AI. PhD or MSc preferred."
+  },
+  {
+    "id": "jd_10",
+    "title": "DevOps Engineer",
+    "company": "PipelineOps Ltd",
+    "description": "We are looking for a DevOps Engineer to build and maintain our CI/CD infrastructure. Responsibilities include automating deployments, managing containerised workloads, and monitoring system performance. Required skills: Docker, Kubernetes, Jenkins, GitHub Actions, Python, Bash scripting, Linux, AWS, Terraform, monitoring tools like Grafana and Prometheus. Experience with agile delivery and infrastructure-as-code is essential. Good communication and problem-solving skills required."
+  }
+]

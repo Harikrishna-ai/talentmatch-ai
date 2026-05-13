@@ -1,0 +1,110 @@
+======================================================
+  TalentMatch AI — Smart CV Job Matching — HOW TO RUN
+======================================================
+
+Author:      Challa Harikrishna Nagasai Charan
+Student ID:  23727842
+Module:      6G6Z0019 Synoptic Project
+Institution: Manchester Metropolitan University
+
+------------------------------------------------------
+REQUIRED SOFTWARE
+------------------------------------------------------
+
+  - Python 3.9 or higher
+  - pip (comes with Python)
+
+Download Python from: https://www.python.org/downloads/
+
+------------------------------------------------------
+STEP 1 — Install required libraries (one time only)
+------------------------------------------------------
+
+Open a terminal / command prompt in this folder and run:
+
+    pip install -r requirements.txt
+
+This installs:
+  - streamlit      (web application framework)
+  - scikit-learn   (TF-IDF and cosine similarity)
+  - pandas         (data handling)
+  - numpy          (matrix operations)
+  - matplotlib     (bar charts and graphs)
+
+------------------------------------------------------
+STEP 2 — Run the web application
+------------------------------------------------------
+
+Navigate into the src folder:
+
+    cd src
+
+Then launch the app:
+
+    streamlit run app.py
+
+The application will open automatically in your browser at:
+
+    http://localhost:8501
+
+------------------------------------------------------
+STEP 3 — Using the application
+------------------------------------------------------
+
+1. Paste your CV text into the text area on the left
+2. Click "Analyse My CV"
+3. The system will:
+   - Preprocess the text
+   - Apply TF-IDF vectorisation
+   - Compute cosine similarity against 10 job descriptions
+   - Return a ranked list of matches with scores and keywords
+4. Use "Load Sample CV" to try a pre-loaded example CV
+5. Download results as CSV using the button at the bottom
+
+------------------------------------------------------
+FOLDER STRUCTURE
+------------------------------------------------------
+
+  MatchAI_Submission/
+  |
+  |-- src/
+  |   |-- app.py            (Streamlit web application)
+  |   |-- job_matcher.py    (Core NLP matching engine)
+  |
+  |-- data/
+  |   |-- job_descriptions/
+  |   |   |-- jobs.json     (10 job descriptions dataset)
+  |   |-- cvs/
+  |       |-- cv_sample_1.txt   (Sample CV 1 - Software Developer)
+  |       |-- cv_sample_2.txt   (Sample CV 2 - Data Science / NLP)
+  |
+  |-- results/
+  |   |-- cv1_results.png   (Bar chart - CV 1 results)
+  |   |-- cv2_results.png   (Bar chart - CV 2 results)
+  |   |-- heatmap.png       (Similarity heatmap - both CVs)
+  |   |-- full_results.csv  (Complete results table)
+  |
+  |-- requirements.txt      (Python dependencies)
+  |-- HOW_TO_RUN.txt        (This file)
+  |-- README.md             (Full project documentation)
+  |-- VIDEO_LINK.txt        (Link to demonstration video)
+
+------------------------------------------------------
+TROUBLESHOOTING
+------------------------------------------------------
+
+  If "streamlit: command not found":
+    Try:  python -m streamlit run app.py
+
+  If import errors:
+    Make sure you ran: pip install -r requirements.txt
+    from the project root folder (not inside src/)
+
+  If the browser does not open automatically:
+    Open your browser manually and go to:
+    http://localhost:8501
+
+  To stop the application:
+    Press Ctrl + C in the terminal
+
+------------------------------------------------------

@@ -1,0 +1,29 @@
+Name: Alex Johnson
+Email: alex.johnson@email.com
+
+PERSONAL STATEMENT
+I am a motivated Computer Science graduate with a strong passion for software development and machine learning. I enjoy solving complex problems and building scalable, user-friendly applications using Python and modern web technologies.
+
+EDUCATION
+BSc Computer Science – University of Manchester (2021–2024)
+Relevant Modules: Machine Learning, Data Structures, Algorithms, Database Systems, Software Engineering
+
+SKILLS
+Programming: Python, JavaScript, HTML, CSS, SQL
+Frameworks: Flask, React, scikit-learn, Pandas, NumPy
+Tools: Git, VS Code, Jupyter Notebook
+Other: REST APIs, Agile methodology, problem-solving, teamwork, communication
+
+EXPERIENCE
+Software Developer Intern – TechSolutions Ltd (Summer 2023)
+- Developed Python scripts to automate data processing tasks
+- Built REST API endpoints using Flask
+- Collaborated in an agile team of 5 developers
+
+PROJECTS
+Personal Portfolio Website – Built using React and deployed on GitHub Pages
+Sentiment Analysis Tool – Used scikit-learn and TF-IDF to classify customer reviews
+
+CERTIFICATIONS
+Python for Data Science – Coursera (2023)
+Git and GitHub Essentials – Udemy (2022)

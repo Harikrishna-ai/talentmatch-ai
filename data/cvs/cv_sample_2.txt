@@ -1,0 +1,28 @@
+Name: Priya Patel
+Email: priya.patel@email.com
+
+PERSONAL STATEMENT
+Passionate data science graduate with hands-on experience in machine learning, NLP, and statistical analysis. Eager to apply advanced AI techniques to solve real-world problems in a research or industry setting.
+
+EDUCATION
+MSc Artificial Intelligence – University of Leeds (2023–2024)
+BSc Mathematics and Statistics – University of Nottingham (2020–2023)
+
+SKILLS
+Programming: Python, R, SQL
+Libraries: scikit-learn, TensorFlow, PyTorch, NLTK, spaCy, Pandas, NumPy, Matplotlib
+ML Techniques: NLP, text classification, regression, clustering, neural networks, transformers, BERT
+Tools: Jupyter Notebook, Git, Docker, Google Colab
+
+EXPERIENCE
+Data Science Intern – InsightPro Analytics (Summer 2023)
+- Built a text classification model using TF-IDF and logistic regression achieving 91% accuracy
+- Created interactive Tableau dashboards for business stakeholders
+- Processed and cleaned datasets of over 100,000 records using Pandas
+
+PROJECTS
+Fake News Detection – NLP pipeline using TF-IDF and logistic regression trained on 40,000 news articles
+Sentiment Analysis of Twitter Data – Fine-tuned BERT model achieving 88% accuracy
+
+PUBLICATIONS
+Patel, P. (2024). Evaluating TF-IDF vs BERT for Text Classification. MSc Dissertation, University of Leeds.
