@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # TalentMatch AI - CV Job Matching System
 
 **Module:** 6G6Z0019 Synoptic Project
@@ -6,28 +6,22 @@
 **Author:** Challa Harikrishna Nagasai Charan
 **Student ID:** 23727842
 **Submission Date:** May 2026
-=======
-# 🎯 TalentMatch AI — Smart CV Job Matching
+# TalentMatch AI — Smart CV Job Matching
 
 **Module:** 6G6Z0019 Synoptic Project  
 **Institution:** Manchester Metropolitan University  
 **Author:** Challa Harikrishna Nagasai Charan  
 **Student ID:** 23727842  
 **Submission Date:** May 2026  
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
-
----
 
 ## Project Overview
-
-<<<<<<< HEAD
+HEAD
 TalentMatch AI is a CV-to-Job Matching System that compares CVs with job
 descriptions using NLP techniques. It returns ranked matches with similarity
 scores and keyword outputs for each job.
 
 The system was developed to improve transparency in CV screening and job matching.
-The application ranks job descriptions based on how closely they match the uploaded CV.
-=======
+The application ranks job descriptions based on how closely they match the uploaded CV
 TalentMatch AI is an AI-powered CV-to-Job Matching System that simulates the core
 functionality of a commercial Applicant Tracking System (ATS). It uses Natural
 Language Processing (NLP) techniques to compare a user's CV against a set of
@@ -37,9 +31,7 @@ explainable keyword outputs.
 The system addresses a real-world problem: modern ATS tools reject candidates
 automatically without explanation. MatchAI gives job seekers transparent,
 actionable feedback on how their CV aligns with specific roles.
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
 
----
 
 ## How to Run
 
@@ -59,7 +51,7 @@ Opens at: http://localhost:8501
 ## Technical Approach
 
 ### TF-IDF Vectorisation
-<<<<<<< HEAD
+ HEAD
 
 TF-IDF was used to convert CVs and job descriptions into numerical vectors.
 This allows the system to compare text documents based on important keywords.
@@ -80,7 +72,7 @@ the documents.
 The system extracts the top shared keywords between the CV and each job by
 computing the element-wise product of both TF-IDF vectors. This gives users
 insight into which skills matched each role.
-=======
+
 Term Frequency–Inverse Document Frequency converts raw CV and job description
 text into weighted numerical vectors. Terms that appear frequently in one
 document but rarely across all documents receive higher weight, making the
@@ -103,13 +95,12 @@ The system extracts the top shared keywords between the CV and each job by
 computing the element-wise product of both TF-IDF vectors. Only terms with
 high weight in both documents score highly, giving users insight into exactly
 which skills drove each match.
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
 
----
+
 
 ## Project Structure
 
-```
+
 MatchAI_Submission/
 <<<<<<< HEAD
 |
@@ -127,14 +118,11 @@ MatchAI_Submission/
 |-- results/
 |   |-- cv1_results.png     Bar chart - CV 1 match results
 |   |-- cv2_results.png     Bar chart - CV 2 match results
-|   |-- heatmap.png         Similarity heatmap (both CVs)
-|   |-- full_results.csv    Complete ranked results table
+|   
 |
 |-- requirements.txt        Python dependencies
 |-- HOW_TO_RUN.txt          Step-by-step run instructions
 |-- README.md               This file
-|-- VIDEO_LINK.txt          Link to demonstration video (Kaltura)
-=======
 │
 ├── src/
 │   ├── app.py              Streamlit web application
@@ -149,27 +137,18 @@ MatchAI_Submission/
 │
 ├── results/
 │   ├── cv1_results.png     Bar chart — CV 1 match results
-│   ├── cv2_results.png     Bar chart — CV 2 match results
-│   ├── heatmap.png         Similarity heatmap (both CVs)
-│   └── full_results.csv    Complete ranked results table
+│   ├── cv2_results.png     Bar chart — CV 2 match result
 │
 ├── requirements.txt        Python dependencies
 ├── HOW_TO_RUN.txt          Step-by-step run instructions
 ├── README.md               This file
-└── VIDEO_LINK.txt          Link to demonstration video (Kaltura)
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
-```
-
----
-
-<<<<<<< HEAD
+HEAD
 ## Example Results
 
 The system was tested using sample CVs from software development
 and data science backgrounds. The results showed that the matching
 system was able to rank relevant job descriptions successfully.
 During testing, the system performed best when the CV contained clear technical skills and project descriptions.
-=======
 ## Evaluation Results
 
 | CV Profile         | Top Match             | Spearman Correlation |
@@ -180,19 +159,17 @@ During testing, the system performed best when the CV contained clear technical 
 The Spearman rank correlation measures how closely the system's ranking matches
 the expected ranking from a human expert. Values above 0.85 indicate strong
 concordance.
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
 
----
+
+
 
 ## Ethics and EDI
-
-<<<<<<< HEAD
+ HEAD
 - No real personal data was collected or stored.
 - All CV data used for testing is synthetic.
 - All processing is in-memory only - nothing is written to disk.
 - The system matches on skills only - it does not use name, age,
-  gender, or ethnicity in any way.
-=======
+  gender, or ethnicity in any way
 - **No real personal data** was collected or stored at any point
 - All CV data used for testing is synthetic
 - All processing is **in-memory only** — nothing is written to disk
@@ -200,13 +177,12 @@ concordance.
   gender, ethnicity, or any other protected characteristic
 - Compliant with the UK GDPR and Data Protection Act 2018
 - Compliant with the Equality Act 2010
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
 
----
+
 
 ## Limitations
 
-<<<<<<< HEAD
+ HEAD
 - TF-IDF does not understand synonyms - "developer" and "programmer"
   are treated as different words.
 - The dataset is small (10 job descriptions).
@@ -220,7 +196,7 @@ concordance.
 - Add support for larger job datasets
 - Improve matching accuracy using advanced NLP models
 - Add PDF CV upload support
-=======
+
 - TF-IDF does not capture **semantic meaning** — synonyms such as
   "developer" and "programmer" are treated as different terms
 - The dataset is **small** (10 job descriptions) — production ATS tools
@@ -228,7 +204,7 @@ concordance.
 - The system is **sensitive to phrasing** — minor wording differences
   between CV and job description can affect rankings
 
----
+
 
 ## Future Work
 
@@ -236,13 +212,11 @@ concordance.
 - Integrate live job listings from the **Reed or Indeed API**
 - Implement **Fairlearn** for automated bias detection
 - Add a **user account system** for CV version tracking over time
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
 
----
 
 ## Dependencies
 
-<<<<<<< HEAD
+ HEAD
 | Package       | Version   | Purpose                       |
 |--------------|-----------|-------------------------------|
 | streamlit    | >= 1.32.0 | Web application framework     |
@@ -254,7 +228,7 @@ concordance.
 ---
 
 *Manchester Metropolitan University - 6G6Z0019 Synoptic Project - May 2026*
-=======
+
 | Package      | Version   | Purpose                          |
 |-------------|-----------|----------------------------------|
 | streamlit   | ≥ 1.32.0  | Web application framework        |
@@ -266,4 +240,4 @@ concordance.
 ---
 
 *Manchester Metropolitan University — 6G6Z0019 Synoptic Project — May 2026*
->>>>>>> 9610814e1849cdb4d835e4e2885601c80dce04d1
+
