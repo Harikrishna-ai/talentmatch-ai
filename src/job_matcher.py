@@ -1,12 +1,7 @@
 """
 job_matcher.py
 
- HEAD
 CV and job matching using TF-IDF vectorisation and cosine similarity.
-
-CV and job matching functions using
-TF-IDF vectorisation and cosine similarity.
-
 
 Student Name: Challa Harikrishna Nagasai Charan
 Student ID: 23727842
@@ -23,32 +18,21 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-HEAD
 def get_jobs_file():
     # Look for the jobs file in the expected folder structure
-
-# Find jobs file
-def get_jobs_file():
-
-
     possible_paths = [
         os.path.join(os.path.dirname(__file__), "..", "data", "job_descriptions", "jobs.json"),
         os.path.join(os.path.dirname(__file__), "data", "job_descriptions", "jobs.json"),
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "jobs.json"),
     ]
- HEAD
-
     for path in possible_paths:
         full_path = os.path.normpath(os.path.abspath(path))
         if os.path.exists(full_path):
             return full_path
- HEAD
-
     return os.path.normpath(os.path.abspath(possible_paths[0]))
 
 
 JOBS_FILE = get_jobs_file()
-<<<<<<< HEAD
 STOP_WORDS = "english"
 
 
@@ -100,87 +84,10 @@ def match_cv_to_jobs(cv_text, jobs):
     job_vectors = tfidf_matrix[1:]
 
     similarity_scores = cosine_similarity(cv_vector, job_vectors).flatten()
-=======
-
-STOP_WORDS = "english"
-
-
-# Text cleaning
-def preprocess_text(text):
-
-    if not text or not isinstance(text, str):
-        return ""
-
-    # Convert to lowercase
-    text = text.lower()
-
-    # Remove punctuation
-    text = text.translate(str.maketrans("", "", string.punctuation))
-
-    # Remove numbers
-    text = re.sub(r"\d+", "", text)
-
-    # Remove extra spaces
-    text = re.sub(r"\s+", " ", text).strip()
-
-    return text
-
-
-# Load jobs from JSON file
-def load_job_descriptions(filepath=JOBS_FILE):
-
-    if not os.path.exists(filepath):
-        raise FileNotFoundError(
-            f"Job descriptions file not found: {filepath}"
-        )
-
-    with open(filepath, "r", encoding="utf-8") as file:
-        jobs = json.load(file)
-
-    return jobs
-
-
-# Match CV with jobs
-def match_cv_to_jobs(cv_text, jobs):
-
-    if not cv_text.strip():
-        raise ValueError("CV text is empty.")
-
-    if not jobs:
-        raise ValueError("No job descriptions found.")
-
-    clean_cv = preprocess_text(cv_text)
-
-    job_texts = [
-        preprocess_text(job["description"])
-        for job in jobs
-    ]
-
-    corpus = [clean_cv] + job_texts
-
-    # Convert text into numerical vectors
-    vectoriser = TfidfVectorizer(
-        stop_words=STOP_WORDS,
-        ngram_range=(1, 2),
-        max_features=5000
-    )
-
-    tfidf_matrix = vectoriser.fit_transform(corpus)
-
-    cv_vector = tfidf_matrix[0]
-    job_vectors = tfidf_matrix[1:]
-
-    similarity_scores = cosine_similarity(
-        cv_vector,
-        job_vectors
-    ).flatten()
-
-
     feature_names = vectoriser.get_feature_names_out()
     cv_array = cv_vector.toarray().flatten()
 
     results = []
-HEAD
     for i, job in enumerate(jobs):
         score = float(similarity_scores[i])
         job_array = job_vectors[i].toarray().flatten()
@@ -208,56 +115,15 @@ HEAD
 
 def extract_cv_keywords(cv_text, top_n=15):
     """Extract the most distinctive terms from the CV using TF-IDF."""
-
-
-    for index, job in enumerate(jobs):
-        score = float(similarity_scores[index])
-        job_array = job_vectors[index].toarray().flatten()
-        shared_weights = cv_array * job_array
-        top_indices = np.argsort(shared_weights)[::-1][:10]
-        top_keywords = [
-            feature_names[i]
-            for i in top_indices
-            if shared_weights[i] > 0
-        ]
-
-        results.append({
-            "id": job["id"],
-            "title": job["title"],
-            "company": job["company"],
-            "score": round(score, 4),
-            "percentage": round(score * 100, 2),
-            "top_keywords": top_keywords,
-            "description": job["description"]
-        })
-
-    # Sort by highest score
-    results.sort(key=lambda x: x["score"], reverse=True)
-
-    return results
-
-
-# Extract keywords from CV
-def extract_cv_keywords(cv_text, top_n=15):
-
-
     if not cv_text.strip():
         return []
 
     clean_cv = preprocess_text(cv_text)
 
- HEAD
     vectoriser = TfidfVectorizer(
         stop_words=STOP_WORDS,
         ngram_range=(1, 2),
         max_features=1000,
-
-    # Convert text into numerical vectors
-    vectoriser = TfidfVectorizer(
-        stop_words=STOP_WORDS,
-        ngram_range=(1, 2),
-        max_features=1000
-
     )
 
     tfidf_matrix = vectoriser.fit_transform([clean_cv])
@@ -265,7 +131,6 @@ def extract_cv_keywords(cv_text, top_n=15):
     scores = tfidf_matrix.toarray().flatten()
     top_indices = np.argsort(scores)[::-1][:top_n]
 
- HEAD
     return [feature_names[i] for i in top_indices if scores[i] > 0]
 
 
@@ -281,35 +146,6 @@ def get_match_label(score):
 
 
 if __name__ == "__main__":
-
-    keywords = [
-        feature_names[i]
-        for i in top_indices
-        if scores[i] > 0
-    ]
-
-    return keywords
-
-
-# Match quality label
-def get_match_label(score):
-
-    if score >= 0.40:
-        return "Strong Match"
-
-    elif score >= 0.25:
-        return "Good Match"
-
-    elif score >= 0.10:
-        return "Average Match"
-
-    return "Low Match"
-
-
-# Test run
-if __name__ == "__main__":
-
-
     sample_cv = """
     Computer Science student with experience in Python,
     machine learning, data analysis, SQL, Flask,
@@ -324,18 +160,6 @@ if __name__ == "__main__":
     print(", ".join(keywords[:10]))
 
     print("\nJob Matches:\n")
-HEAD
     for rank, job in enumerate(results[:5], start=1):
         label = get_match_label(job["score"])
         print(f"{rank}. {job['title']} - {job['company']} - {job['percentage']}% - {label}")
-
-
-    for rank, job in enumerate(results[:5], start=1):
-        label = get_match_label(job["score"])
-        print(
-            f"{rank}. {job['title']} - "
-            f"{job['company']} - "
-            f"{job['percentage']}% - "
-            f"{label}"
-        )
-
