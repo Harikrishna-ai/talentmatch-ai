@@ -84,13 +84,11 @@ MatchAI_Submission/
 ├── results/
 │   ├── cv1_results.png     Bar chart — CV 1 match results
 │   ├── cv2_results.png     Bar chart — CV 2 match results
-│   ├── heatmap.png         Similarity heatmap (both CVs)
-│   └── full_results.csv    Complete ranked results table
 │
 ├── requirements.txt        Python dependencies
 ├── HOW_TO_RUN.txt          Step-by-step run instructions
 ├── README.md               This file
-└── VIDEO_LINK.txt          Link to demonstration video (Kaltura)
+
 ```
 
 ---
